@@ -1,0 +1,13 @@
+.user--photo {
+    box-sizing: content-box;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+
+    &__margin--right {
+        &:not(:last-child){
+            margin-right: -1.5rem;
+        }
+    }
+}

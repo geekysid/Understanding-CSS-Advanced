@@ -1,0 +1,33 @@
+.understanding-grid-layout {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 60rem;
+    grid-template-rows: repeat(6 * 3rem);
+
+    .row {
+        max-width: $gridLayout--max_width;
+        background-color: $gridLayout--background;
+        margin: 0 auto;
+        height: $gridLayout--height;
+        display: grid;
+        grid-template-columns: repeat(3 * 20rem);
+
+
+        grid-column: 1/2;
+
+        &:not(:last-child) {
+            margin-bottom: $gridLayout--gutter_vertical;
+        }
+
+        [class^="col-"] {
+            background-color: $gridLayout--col_background;
+            color: $gridLayout--text_color;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        // .col-1-of-2 {
+
+        // }
+    }
+}

@@ -1,0 +1,68 @@
+.hotel--details {
+    font-size: 1.15rem;
+    padding: 3rem;
+    color: var(--color-grey-dark-4);
+
+    &__intro {
+        background-color: #fff;
+        border-radius: 3px;
+        // margin: 1.5rem;
+        margin-right: 3.5rem;
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column; 
+        padding: 0 2rem;
+
+        & > * {
+            padding: 2rem 0;
+        }
+
+        @include responsive(tab-port) {
+            margin-right: 2.5rem;
+        }
+
+        @include responsive(phone) {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__benifits--list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        border-bottom: 1px solid var(--color-grey-light-3);
+        border-top: 1px solid var(--color-grey-light-3);
+    }
+
+    &__benifits--item {
+        flex-basis: 50%;
+        padding: 0.3rem 0;
+    }
+
+    &__svg {
+        width: 1rem;
+        height: 1rem;
+        fill: var(--color-primary);
+    }
+
+    &__recommended {
+        display: flex;
+        align-items: center;
+        
+        & p {
+            margin-right: auto;
+        }
+    }
+
+    &__recommended--gallery {
+        display: flex;
+    }
+
+    &__review {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }
+}

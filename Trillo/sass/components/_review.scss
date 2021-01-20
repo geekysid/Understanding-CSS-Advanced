@@ -1,0 +1,78 @@
+.review {
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+    z-index: 200;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -1.5rem;
+        left: -0.75rem;
+
+        font-weight: 700;
+        font-family: sans-serif;
+        line-height: 1;
+        font-size: 11rem;
+        color: var(--color-grey-light-3);
+        z-index: 10;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 3.5rem;
+
+        @include responsive(tab-port) {
+            margin-bottom: 2.5rem;
+        }
+
+        @include responsive(phone) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--msg{
+        padding-bottom: 1rem;
+    }
+
+    &--user {
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+
+        &__info {
+            padding-left: 1rem;
+            margin-right: auto;
+        }
+
+        &__name {
+            font-size: 1.1rem;
+        }
+
+        &__dob {
+            font-size: 0.9rem;
+        }
+
+        &__rating {
+            // font-size: 0.8rem;
+            font-weight: 300;
+            font-size: 2rem;
+            color: var(--color-primary);
+        }
+    }
+
+    &--more {
+        // margin: 1.5rem;
+        padding-bottom: 1rem;
+        text-align: center;
+
+        &__btn {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+*,
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px=62.5%
+
+    @include responsive(tab-land) {
+        font-size: 59.375%; // 1rem = 10px, 9.5px/16px=59.365%
+    }
+    @include responsive(tab-port) {
+        font-size: 56.25%; // 1rem = 10px, 9px/16px=50%
+    }
+    @include responsive(phone) {
+        font-size: 53.125%; // 1rem = 10px, 8.5px/16px=50%
+    }
+    @include responsive(phone-small) {
+        font-size: 50%; // 1rem = 10px, 8px/16px=50%
+    }
+}
+
+body {
+    font-size: 1.5rem;
+    color: #faf9f9;
+    min-height: 100vh;
+    min-width: 300px;
+    background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+}

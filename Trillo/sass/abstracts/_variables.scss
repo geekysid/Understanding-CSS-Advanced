@@ -1,0 +1,41 @@
+// CSS VARIBALE (CSS CUSTOM PROPERTIES)
+
+/*
+    COLORS
+    Primary: #eb2f64;
+    Primary Light: #ff3366;
+    Primary Dark: #ba265d;
+    
+    Grey Light 1: #faf9f9;
+    Grey Light 2: #f4f2f2;
+    Grey Light 3: #f0eeee;
+    Grey Light 4: #ccc;
+
+    Grey Dark 1: #333;
+    Grey Dark 2: #777;
+    Grey Dark 3: #999;
+*/
+
+
+
+:root {
+
+    // COLORS
+    --color-primary: #eb2f64;
+    --color-primary-light: #ff3366;
+    --color-primary-dark: #ba265d;
+
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+
+    // SHADOWS
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+}

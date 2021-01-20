@@ -1,0 +1,36 @@
+
+@keyframes move-heading-left {
+    from {
+        @include animation-initial(0, translateX(-100px));
+    }
+    75% {
+        @include animation-mid(0.8, translateX(10px));
+    }
+    to {
+        @include animation-end(1, translateX(0));
+    }
+}
+
+@keyframes move-sub_heading-right{
+    from {
+        @include animation-initial(0, translateX(100px));
+    }
+    75% {
+        @include animation-mid(0.8, translateX(-10px));
+    }
+    to {
+        @include animation-end(1, translateX( ));
+    }
+}
+
+@keyframes move-heading_button-down{
+    from {
+        @include animation-initial(0, translateY(100px));
+    }
+    75% {
+        @include animation-mid(0.8, translateY(-10px));
+    }
+    to {
+        @include animation-end(1, translateY(0px));
+    }
+}

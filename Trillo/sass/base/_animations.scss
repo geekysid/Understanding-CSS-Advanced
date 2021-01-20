@@ -1,0 +1,16 @@
+@keyframes link_pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 1rem 2rem rgba(0,0,0, 0.5);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

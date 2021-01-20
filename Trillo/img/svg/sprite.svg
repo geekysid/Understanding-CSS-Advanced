@@ -1,0 +1,32 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-airplane">
+    <path d="M12 9.999L9.143 7.142 16 1.999l-2-2-8.571 3.429L2.731.729C1.953-.049.867-.235.317.315s-.364 1.636.414 2.414l2.698 2.698L0 13.999l2 2 5.144-6.857 2.857 2.857v4h2l1-3 3-1v-2h-4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-bookmark">
+    <path d="M3 0v16l5-5 5 5V0z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16" id="svg-chat">
+    <path d="M17 14.081c0 .711.407 1.327 1 1.628v.249a3.71 3.71 0 01-3.207-1.125 5.03 5.03 0 01-1.293.168c-2.485 0-4.5-1.791-4.5-4s2.015-4 4.5-4 4.5 1.791 4.5 4c0 .865-.309 1.665-.834 2.32a1.81 1.81 0 00-.166.761zM8 0c4.351 0 7.89 2.822 7.997 6.336a6.123 6.123 0 00-2.497-.524c-1.493 0-2.903.523-3.971 1.472C8.422 8.268 7.812 9.588 7.812 11c0 .698.149 1.373.433 1.997a10.089 10.089 0 01-1.493-.076c-1.718 1.718-3.77 2.027-5.753 2.072v-.421c1.071-.525 2-1.48 2-2.572a3.01 3.01 0 00-.034-.448C1.156 10.36-.001 8.54-.001 6.5c0-3.59 3.582-6.5 8-6.5z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-home">
+    <path d="M16 9.226l-8-6.21-8 6.21V6.694l8-6.21 8 6.21zM14 9v6h-4v-4H6v4H2V9l6-4.5z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-key">
+    <path d="M11 0a5 5 0 00-4.916 5.916L0 12v3a1 1 0 001 1h1v-1h2v-2h2v-2h2l1.298-1.298A5 5 0 1011 0zm1.498 5.002a1.5 1.5 0 11.001-3.001 1.5 1.5 0 01-.001 3.001z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-location">
+    <path d="M8 0a5 5 0 00-5 5c0 5 5 11 5 11s5-6 5-11a5 5 0 00-5-5zm0 8a3 3 0 110-6 3 3 0 010 6z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-map">
+    <path d="M10.5 3l-5-2L0 3v12l5.5-2 5 2 5.5-2V1l-5.5 2zM6 2.277l4 1.6v9.846l-4-1.6V2.277zM1 3.7l4-1.455v9.872l-4 1.454V3.699zm14 8.6l-4 1.455V3.883l4-1.455V12.3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-play">
+    <path d="M3 2l10 6-10 6z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-search">
+    <path d="M15.504 13.616l-3.79-3.223c-.392-.353-.811-.514-1.149-.499a6 6 0 10-.672.672c-.016.338.146.757.499 1.149l3.223 3.79c.552.613 1.453.665 2.003.115s.498-1.452-.115-2.003zM6 10a4 4 0 110-8 4 4 0 010 8z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="svg-star">
+    <path d="M16 6.204l-5.528-.803L8 .392 5.528 5.401 0 6.204l4 3.899-.944 5.505L8 13.009l4.944 2.599L12 10.103l4-3.899z"></path>
+  </symbol>
+</svg>

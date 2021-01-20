@@ -1,0 +1,91 @@
+.stories {
+    width: 80%;
+    height: 100%;
+    margin: 1.5rem auto;
+    background-color: rgba($color_white, 0.9);
+    border-radius: 3px;
+    box-shadow: 0 1rem 1rem rgba($color_black, 0.2);
+    transform: skewX(-20deg);
+    padding: 3rem;
+    position: relative;
+
+    @include response(tab-port) {
+        width: 100%;
+        transform: skewX(0);
+    }
+
+    & > * {
+        transform: skewX(20deg);
+
+        @include response(tab-port) {
+            transform: skewX(0);
+        }
+        // padding: 3rem 4rem;
+    }
+
+    &__figure {
+        width: 10rem;
+        height: 10rem;
+        float:left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-1rem) skewX(20deg);
+            
+        @include response(tab-port) {
+            width: 12rem;
+            height: 12rem;
+            display: block;
+            float: none;
+            margin: auto;
+            transform: translateX(-1rem) skewX(0);
+        }
+        
+        &--img {
+            height: 110%;
+            transform: translateX(-3rem) scale(1.2) ;
+            transition: all 1s;
+        }
+
+        &--caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, 20%);
+            font-weight: 700;
+            color: $color_light-gray;
+            text-align: center;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            transition: all 1s;
+        }
+    }
+
+    &__text {
+        transform: skewX(20deg);
+        margin: auto;
+
+        @include response(tab-port) {
+            transform: skewX(0);
+            margin-top: 2rem; 
+        }
+    
+    }
+
+    &:hover &__figure--img {
+        transform: scale(1) translateX(-3rem);
+        filter: blur(5px) brightness(80%);
+    }
+
+    &:hover &__figure--caption {
+        opacity: 100%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--read_more {
+        text-align: center;
+    }
+}
+

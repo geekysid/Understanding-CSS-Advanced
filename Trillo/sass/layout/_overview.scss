@@ -1,0 +1,120 @@
+.hotel {
+    
+    &--gallery {
+    display:flex;
+
+        &__img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &--info {
+        display:flex;
+        background-color: #fff;
+        align-items: center;
+
+        &__name {
+            padding: 1.5rem 2.5rem;
+            display: inline-block;
+            font-weight: 300;
+            font-size: 2.25rem;;
+            letter-spacing: 1.1;
+            text-transform: uppercase;
+            color: var(--color-grey-dark-4);
+
+            @include responsive(phone) {
+                font-size: 2rem;;
+            }
+        }
+
+        &__star {
+            // display: inline-block;
+            // flex-grow: 1;
+            margin-right: auto;
+            display: flex;
+        }
+        
+        &__svg {
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: var(--color-primary);
+
+            @include responsive(phone) {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        &__location {
+            vertical-align: middle;
+            display: flex;
+
+            &--link:link, &--link:visited {
+                text-decoration: none;
+                color: var(--color-primary);
+                border-bottom: 1px solid var(--color-primary);
+                padding-bottom:0.21rem;
+                font-size: 1rem;
+                transition: all .3s;
+            }
+
+            &--link:hover, &--link:active {
+                color: var(--color-grey-dark-1);
+                border-bottom: 1px solid var(--color-grey-dark-1);
+            }
+
+            &--link:active {
+                border-bottom: 1px solid var(--color-grey-dark-1);
+                -webkit-animation: link_pulsate 1s infinite;
+                animation: link_pulsate 1s infinite;
+            }
+        }
+        
+        &__rating {
+            background-color: var(--color-primary);
+            color: #fff;
+            font-weight: 300;
+            margin-left: 3rem;
+            text-align: center;
+
+            /* **** Use this Code or Below Code **** */
+            padding: 0 1.5rem;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* **** Use this Code or Above Code **** */
+            // text-align: center;
+            // padding: 1.5rem;
+            
+            &--heading {
+                font-size: 2rem;
+
+                @include responsive(phone) {
+                    font-size: 1.75rem;
+                }
+            }
+            &--detail {
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+
+    &--details {
+        background-color: var(--color-grey-light-3);
+        display: flex;
+        
+        @include responsive(phone){
+            flex-direction: column;
+        }
+    }
+
+    &--cta {
+        background-color: var(--color-grey-light-1);
+    }
+}

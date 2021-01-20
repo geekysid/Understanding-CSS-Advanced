@@ -1,0 +1,109 @@
+.sidebar {
+    
+    &__list {
+        margin: 2rem 0;
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        list-style: none;
+
+        @include responsive(tab-port) {
+            flex-direction: row;
+            margin: 0;
+        }
+    }
+
+    &__link {
+        color: var(--color-grey-light-1);
+        text-decoration: none;
+        text-transform: uppercase;
+        // text-align: stretch;
+
+        position: relative;
+        z-index: 100;
+        padding: 1.5rem 4rem;;
+
+        display: flex;
+        align-items: center;
+
+        @include responsive(tab-port) {
+            padding: 2rem 0;
+            justify-content: center;
+        }
+
+        @include responsive(phone){
+            flex-direction: column;
+            // justify-content: space-around
+        
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        @include responsive(tab-port) {
+            flex: 1;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+
+            @include responsive(tab-port) {
+                margin-bottom: 0
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background-color: var(--color-primary);
+            z-index: 10;
+
+            transform: scaleY(0);
+            transition: transform .3s, width 0.4s cubic-bezier(1, 0, 0, 1) .3s;
+            transform-origin: bottom;
+        }
+
+        &:hover::before,
+        &--active {
+            transform: scaleY(1);
+            width: 100%;
+            background-color: var(--color-primary-light);
+        }
+        &:active::active {
+            background-color: var(--color-primary-light);
+        }
+
+        &--svg {
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: var(--color-grey-light-3);
+            margin-right: 2rem;
+
+            @include responsive(phone) {
+                margin: 0;
+                padding: 0.2rem 0;
+            }
+        }
+
+        &--text {
+            @include responsive(phone) {
+                padding: 0.2rem 0;
+            }
+        }
+    }
+
+    &__legal {
+        padding: 2rem;
+        font-size: 1.1rem;
+        text-align: center;
+
+        @include responsive(tab-port) {
+            display: none
+        }
+    }
+}

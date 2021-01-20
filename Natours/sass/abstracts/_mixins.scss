@@ -1,0 +1,68 @@
+@mixin animation-initial($opac, $trans){
+    opacity: $opac;
+    transform: $trans;
+}
+
+@mixin animation-mid($opac, $trans){
+    opacity: $opac;
+    transform: $trans;
+}
+
+@mixin animation-end($opac, $trans){
+    opacity: $opac;
+    transform: $trans;
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+// MEDIA QUERIES
+/*
+    Screen      Device                Name
+    ----------------------------------------
+    < 400:      Small SCreen        : phone-small
+    401-600:    Phone/Mobiles       : phone
+    601-900:    Tablet Portrait     : tab-port
+    901-1200:   Tablet Landscape    : tab-land
+    1201-1800:  Desktop (Normal)    
+    > 1801:     Large Display       :large-disp
+*/
+
+@mixin response($breakpoint) {
+
+    @if $breakpoint == phone-small {
+        @media (max-width: 25em) {  // 400px/16=35em
+            @content
+        }
+    };
+
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {  // 600px/16=37.5em
+            @content
+        }
+    };
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {  // 900px/16=56.25em
+            @content
+        }
+    };
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {  // 1200px/16=75em
+            @content
+        }
+    };
+
+    @if $breakpoint == large-disp {
+        @media (min-width: 112.5em) {  // 1800px/16=112.5em
+            @content
+        }
+    };
+}

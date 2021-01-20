@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    
+    // default font size for tablet in landscape format
+    @include response(tab-land) {
+        font-size: 90%;
+    }
+
+    // default font size for tablets in portrait layout
+    @include response(tab-port) {
+        font-size: 75%;
+    }
+
+    // default font size for phones
+    @include response(phone) {
+        font-size: 60%;
+    }
+
+    // default font size for phones
+    @include response(phone-small) {
+        font-size: 50%;
+    }
+
+    // default font size for displays larger the 1800px
+    @include response(large-disp) {
+        font-size: 110%;
+    }
+}
+
+body {
+    color: $color_medium-gray;
+    padding: 1.5rem;
+}

@@ -1,0 +1,134 @@
+
+//////////////////////////////////////
+// LOGO
+.logo {
+    height: 5.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+//////////////////////////////////////
+// SEARCH BAR
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include responsive(phone-small){
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+
+
+    }
+
+    &__input {
+        background-color: var(--color-grey-light-2);
+        color: var(--color-grey-dark-2);
+        border: none;
+        border-radius: 500px;
+        padding: 1rem 1.5rem;
+        width: 90%;
+        margin-right: -3.5rem;
+
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 300;
+
+        transition: all 0.2s ease-in-out;
+        
+        &:focus {
+            outline: none;
+            width: 95%;
+            background-color: var(--color-grey-light-3);
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-light-4);
+        }
+    }
+
+    &__btn {
+        background-color: var(--color-grey-light-2);
+        border: none;
+        z-index: 100;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+    &__input:focus + &__btn{
+        outline: none;
+        background-color: var(--color-grey-light-3);
+    }
+}
+
+
+//////////////////////////////////////
+// USER NAVIGATION
+.user-nav {
+    display:flex;
+    align-items: center;
+    align-self: stretch;
+    cursor: pointer;
+
+    &__icon-box {
+        padding: 2rem;
+        position: relative;
+
+        &:hover {
+            background-color: var(--color-grey-light-3);
+        }
+    }
+
+    &__svg {
+        height: 2.5rem;
+        width: 2.5rem;
+        padding-top: 3px;
+    }
+
+    &__notification {
+        background-color: var(--color-primary);
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius: 50%;
+        color: var(--color-grey-light-2);
+        
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1rem;
+
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    &__user {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // display: inline-block;
+        padding: 0 2rem;
+
+        &-img {
+            width:4.5rem;
+            height:4.5rem;
+            border-radius: 50%;
+            border: 2px solid var(--color-primary);
+        }
+
+        &-name {
+            margin: 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            background-color: var(--color-grey-light-3);
+        }
+    }
+}
